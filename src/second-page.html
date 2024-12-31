@@ -40,6 +40,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 20px;
         }
         .new-page-container img {
             width: 100%;
@@ -54,6 +55,7 @@
             margin-top: 20px;
             color: #2c3e50;
         }
+        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .btn-custom {
                 font-size: 1.1rem;
@@ -63,11 +65,31 @@
                 font-size: 2.5rem;
             }
             .fs-5 {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             .content {
-                padding: 20px;
+                padding: 15px;
             }
+            .container-fluid {
+                padding: 0;
+            }
+            .new-page-container {
+                padding-top: 50px;
+            }
+            .col-lg-6 {
+                padding: 15px;
+            }
+            .col-12 {
+                padding: 0;
+            }
+        }
+
+        /* Add a custom background to make the text readable */
+        .message-column {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -76,7 +98,7 @@
          style="background-image: url('https://wallpaperaccess.com/full/9178363.jpg'); background-size: cover; background-position: center;">
         <div class="row w-100">
             <!-- Left Column for Message -->
-            <div class="col-lg-6 col-12 p-5 d-flex flex-column justify-content-center align-items-start text-center bg-light bg-opacity-75 rounded-start shadow-lg">
+            <div class="col-lg-6 col-12 p-4 message-column d-flex flex-column justify-content-center align-items-start text-center">
                 <h1 class="display-4 fw-bold text-primary mb-4">Happy New Year 2025!</h1>
                 <p class="fs-5 text-dark mb-4">
                     As the New Year 2025 approaches, I want to take a moment to express my heartfelt wishes for you. May this year bring you unparalleled happiness, abundant success, and countless moments of joy. Each day holds the promise of new opportunities, and I sincerely hope you embrace them all with confidence and enthusiasm.
