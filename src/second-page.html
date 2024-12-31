@@ -42,8 +42,9 @@
             text-align: center;
         }
         .new-page-container img {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
             object-fit: cover;
             border-radius: 15px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -52,6 +53,21 @@
             font-size: 3rem;
             margin-top: 20px;
             color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .btn-custom {
+                font-size: 1.1rem;
+                padding: 12px 25px;
+            }
+            .display-4 {
+                font-size: 2.5rem;
+            }
+            .fs-5 {
+                font-size: 1.1rem;
+            }
+            .content {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -81,8 +97,8 @@
             </div>
 
             <!-- Right Column for Image -->
-            <div class="col-lg-6 col-12 p-0">
-                <img src="https://example.com/ma-sarada-image.jpg" alt="Maa Sarada" class="img-fluid w-100 h-100 object-fit-cover rounded-end shadow-lg">
+            <div class="col-lg-6 col-12 p-0 d-flex justify-content-center align-items-center">
+                <img src="https://example.com/ma-sarada-image.jpg" alt="Maa Sarada" class="img-fluid rounded-end shadow-lg">
             </div>
         </div>
     </div>
