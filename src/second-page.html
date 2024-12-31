@@ -58,7 +58,7 @@
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             .btn-custom {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 padding: 12px 25px;
             }
             .display-4 {
@@ -81,6 +81,24 @@
             }
             .col-12 {
                 padding: 0;
+            }
+        }
+
+        /* Adjust layout for smaller screens */
+        @media (max-width: 576px) {
+            .message-column {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .row {
+                flex-direction: column-reverse;
+            }
+            .col-lg-6, .col-12 {
+                padding: 0;
+            }
+            .new-page-container img {
+                max-width: 90%;
+                height: auto;
             }
         }
 
